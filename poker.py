@@ -748,7 +748,6 @@ while True:
                 best_card[0].get_player_hand(cards[0].get_player_cards())
                 best_card[0].get_player_cards()
                 best_card[0].sort_hand()
-                print(best_card[0].player_cards)
                 get_best(0)
             best_hand_left = -1
             best_hand_owner = -1 
@@ -832,7 +831,6 @@ while True:
             amount_raised = 0
             round_bet = [0, 0, 0, 0, 0, 0]
             total_pot = 0
-            print(str(money[0].get_total() + money[1].get_total() + money[2].get_total() + money[3].get_total() + money[4].get_total() + money[5].get_total()))
 
             # to do the small and big bets and ensure
             if money[small_blind].get_total() >= 5:
