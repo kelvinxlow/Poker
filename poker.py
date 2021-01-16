@@ -26,7 +26,7 @@ screen = pygame.display.set_mode([x, y])
 
 # window settings
 pygame.display.set_caption("Texas Hold'Em")
-icon = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\icon.png")
+icon = pygame.image.load("icon.png")
 pygame.display.set_icon(icon)
 home_screen = True
 
@@ -34,24 +34,24 @@ home_screen = True
 left = 1
 
 # images
-home = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\home.jpg")
-table = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\table.jpg")
-monkey = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\monkey.jpg")
-rhino = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\rhino.jpg")
-penguin = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\penguin.jpg")
-croc = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\croc.jpg")
-hippo = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\hippo.jpg")
-eagle = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\eagle.jpg")
+home = pygame.image.load("home.jpg")
+table = pygame.image.load("table.jpg")
+monkey = pygame.image.load("monkey.jpg")
+rhino = pygame.image.load("rhino.jpg")
+penguin = pygame.image.load("penguin.jpg")
+croc = pygame.image.load("croc.jpg")
+hippo = pygame.image.load("hippo.jpg")
+eagle = pygame.image.load("eagle.jpg")
 
 # card images
 a, b = 13, 4
 card_images = [[0 for x in range(a)] for y in range(b)]
 for i in range(0, 13):
-    card_images[0][i] = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\PNG\{}D.png".format(i+1))
-    card_images[1][i] = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\PNG\{}C.png".format(i+1))
-    card_images[2][i] = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\PNG\{}H.png".format(i+1))
-    card_images[3][i] = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\PNG\{}S.png".format(i+1))
-card_back = pygame.image.load(r"C:\Users\lkelv\PycharmProjects\SimpleGame\PNG\CB.png")
+    card_images[0][i] = pygame.image.load("{}D.png".format(i+1))
+    card_images[1][i] = pygame.image.load("{}C.png".format(i+1))
+    card_images[2][i] = pygame.image.load("{}H.png".format(i+1))
+    card_images[3][i] = pygame.image.load("{}S.png".format(i+1))
+card_back = pygame.image.load("CB.png")
 
 # set up - variables
 num_players = 6
